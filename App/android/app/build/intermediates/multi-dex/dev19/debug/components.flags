@@ -1,0 +1,171 @@
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/expoview-25.0.0.aar/74573414780c6ff261b25d3987192387/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/cb7c3d8e86a4a01740ae6f6f04eaed93/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.4.7.aar/976fa6696460343b8d54044aacd9a2ce/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/lottie-2.2.0.aar/daa48bee2185c277b856a73bab406568/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/react-native-25.0.0.aar/a57d28fe7e1a8f174ece9800e0b8a1a3/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/react-native-25.0.0.aar/a57d28fe7e1a8f174ece9800e0b8a1a3/jars/libs/infer-annotations-4.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/cameraview-1.0.0.aar/f9e2453a34fcf7ef9975e22534a9fb08/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.28.0.aar/214c37c5ffdb1904ea458369c909a736/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/facebook-login-4.28.0.aar/3a8b4c57b7fd451c5d17f6c02cecc709/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/facebook-share-4.28.0.aar/625ad2a9625d695999339d023ed4a105/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/facebook-common-4.28.0.aar/b2f56b1cdc36c0ed99082953b3a3fbc5/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/audience-network-sdk-4.26.1.aar/94853a1c24e0ecc06b3eb55928398812/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/3936b8fd1b66fb032641ca87c8b51d8a/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.amplitude/android-sdk/2.9.2/5ff2f760c3bcad9d4e60f1f84aa695321184ebc0/android-sdk-2.9.2.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-gcm-9.8.0.aar/71c80b08e61faa56415d32134bcc991d/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-analytics-9.8.0.aar/23d0f95f5b0a71568a06e036511cee62/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-wallet-9.8.0.aar/96c44a258ecc7f2cdaf10dd2d6cc31ea/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-maps-9.8.0.aar/dc39fa342e825a99a6873920a4d7cd52/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.8.0.aar/18ecb7512c00aeb4473c194755d70f14/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-fitness-9.8.0.aar/dda37d3b64cfd7466caaa6919f351f8e/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-location-9.8.0.aar/369b32bd2c09ff439020b21c5ff54dde/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-ads-9.8.0.aar/182cc9d32efc4d11c6bda1f3e7211190/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/DBFlow-2.2.1.aar/b9674fa4787d2653b0e8566669ae7a19/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.raizlabs.android/DBFlow-Core/2.2.1/e07bfc8e2041edf27469bd94e08bc19f52f4dee7/DBFlow-Core-2.2.1.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/prov/1.53.0.0/72c4892e05c7563fbab0c4ada0187cd879113389/prov-1.53.0.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/core/1.53.0.0/619f704791db186304325bd129b2e7ec34f77438/core-1.53.0.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.facebook.device.yearclass/yearclass/1.0.1/adfc67ed7e13d1648f20c2a5d6cb757ce43d9c22/yearclass-1.0.1.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/1.3.2/b6dde38349ba9bb5e6ea6320531eae969985dae5/commons-io-1.3.2.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/e3c0d555d27fa619343e6e8ebae9df99/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.5/442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375/universal-image-loader-1.9.5.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/android-scalablevideoview-1.0.1.aar/ff89f1b952f3a65707b84d353ca8209e/jars/classes.jar(**.class)
+-injars '/Applications/Android Studio.app/Contents/gradle/m2repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar'(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.segment.analytics.android/analytics/4.3.0/88ab91d4641af4bed4b39aa3fd7cf487b66b9d5e/analytics-4.3.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.3.0/73c49077166faa4c3c0059c5f583d1d7bd1475fe/core-3.3.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/appauth-0.4.1.aar/e1cabf726bb4680b8383b76c2675e83e/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/library-2.6.1.aar/e13917f72dc506af3fabecbfbeaef463/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/library-3.2.11.aar/ae3249b5df744d0b792488c7030d26f0/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/exifinterface-26.0.1.aar/8464ab34cc2ea80ccdeda429fa5e1a98/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho-okhttp3/1.3.1/c596b3b33b5a92107bb70544bb5ee35f597bc6d8/stetho-okhttp3-1.3.1.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.0.1.aar/354985265cd72c1974104a493d2b0f7a/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/firebase-core-9.8.0.aar/69d0aab697a6c9f8e04e0f255fadbbad/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/leakcanary-android-no-op-1.4-beta1.aar/16413e533017ffae1d7a8d782720e3bf/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/stripe-android-2.1.0.aar/80e6e391d81326fa7a7bdcd854fd28d6/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-iid-9.8.0.aar/4bd17d2ea8ca951aad49ec64407d5bd1/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-9.8.0.aar/6b6c37c22ae7bb2a3a4479530cc32ae2/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-9.8.0.aar/1055e30cb5d208f496b6bf81bb1b1fde/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-9.8.0.aar/4086083637114ecbe2153a09d30213c9/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-vision-9.8.0.aar/cc741ff462b3b4aeec124f6bc404f40e/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-identity-9.8.0.aar/d0f32772142f350f62558d3952d1d4ab/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/ae48c92a921ae47f807bff8e6d2b4abd/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.8.0.aar/72ec5bcddc368bf63fd0a879568d8577/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-gass-9.8.0.aar/14cdfb91a1203209978a395c9b705347/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/firebase-analytics-9.8.0.aar/cfc0a7d1a9d4d53744ef9c77a6d554a0/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-9.8.0.aar/28ae84718a7e3071f7e2d2fb5b7da908/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.8.0.aar/dfd4e65a00cebc287cecad1c830e6eb2/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/firebase-common-9.8.0.aar/2855f789eff1d8848a10c27cccef8eff/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-tasks-9.8.0.aar/0966f42b99b6074952ff9c39e9865628/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.8.0.aar/9df25f77d1f94cd5bb25e7e6672b30cc/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/CreditCardEntry-1.4.8.4.aar/cc6fc4be00e412cbf37145612f96a178/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.1.aar/c5c00be562bc417c7d45f45d4d4dcf59/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.1.aar/b06e0cbbc5b253c0f77e6fdd152375d9/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.1.aar/1b07d5e10420aa92f0be124c713d7d71/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.1.aar/7702ac5db1fec9be37ba2357f43757e8/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.1.aar/a0c5024fec81e03da86c6f4c181ec6c5/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.1.aar/39ea6bc761b2705ef143189ef0b45117/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.1.aar/614f81b2e9505890f3da161e9c4219a5/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/facebook-places-4.28.0.aar/15d5721bed9d3dbaedebd46cd51a2a13/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.28.0.aar/030071d656c233af3b95efa7b2afa3fd/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.28.0.aar/28a751d442ed77cb37a3643e9ae220c2/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/facebook-core-4.28.0.aar/1eddeccaf4e300a954ab7de8649e2417/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.1.aar/a9367f7159c42cba15e2f249d3fe70e1/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/customtabs-26.0.1.aar/a282ba9f72036d2ed61a8ada1a6bf255/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.1.aar/f8ba4810404f39fd5467fb7a32178afa/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/exoplayer-r2.0.3.aar/7b60f45e6667ba115689b1344fe77376/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.0.1.aar/a986ee99ccb171e52e246efec8b070a7/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.0.1/e1bb32b12b25e2f78e6786059ca7ea878f8345e0/support-annotations-26.0.1.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.4.0/cc174c559b5177982887bf6e1b76003aebad9516/bolts-android-1.4.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/answers-shim-0.0.6.aar/7b869239586c859e133c508be74031c1/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi25_0_0-1.0.0.aar/95ea7465f350449c2df6edeff4bff07d/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi25_0_0-1.0.0.aar/95ea7465f350449c2df6edeff4bff07d/jars/libs/infer-annotations-4.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi24_0_0-1.0.0.aar/a21ba032aedffa7f94e0c5af092b3601/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi24_0_0-1.0.0.aar/a21ba032aedffa7f94e0c5af092b3601/jars/libs/infer-annotations-4.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi23-1.0.0.aar/0e5af06a66969f0b631683dc45a47825/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi23-1.0.0.aar/0e5af06a66969f0b631683dc45a47825/jars/libs/infer-annotations-4.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi22-1.0.0.aar/c945965c7e910ab1f4fd4664e7700a29/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi22-1.0.0.aar/c945965c7e910ab1f4fd4664e7700a29/jars/libs/infer-annotations-4.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi21-1.0.0.aar/f0d26da3e294759ec5f02f6b2390f81f/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi21-1.0.0.aar/f0d26da3e294759ec5f02f6b2390f81f/jars/libs/infer-annotations-4.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi20-1.0.0.aar/3ff09d42fba99e6c1c938913e4fe7342/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi20-1.0.0.aar/3ff09d42fba99e6c1c938913e4fe7342/jars/libs/infer-annotations-4.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi19-1.0.0.aar/f0543967d04cbebf600792f55961fb94/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/reactandroid-abi19-1.0.0.aar/f0543967d04cbebf600792f55961fb94/jars/libs/infer-annotations-4.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/844363ebb04041dd3ac74e4a0444cdb9/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/fresco-1.0.1.aar/bd9781846c3b42da64deeb812538b3c5/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/animated-gif-1.0.1.aar/2c9e8c825e097d1f130fb68f686e5641/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/animated-webp-1.0.1.aar/9313a266d92675550700fd18cd4e365f/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/webpsupport-1.0.1.aar/0e7f6d91b8ee150e8395d09b3f15a3f1/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/expolib_v1-imagepipeline-okhttp3-1.0.1.aar/2fbf628cdb86592275fa505ee6528910/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho/1.3.1/2c4076b466a0eb4d6ddf5721edd35cd1adc1f317/stetho-1.3.1.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/65d7df0853fe77d8edcc64cdbb84d058/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.3/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar(**.class)
+-injars /Users/aliceostberg/Documents/GitHub/portablecdm/App/android/maven/expolib_v1/com/squareup/okhttp3/okhttp/3.6.0/okhttp-3.6.0.jar(**.class)
+-injars /Users/aliceostberg/Documents/GitHub/portablecdm/App/android/maven/expolib_v1/com/squareup/okhttp3/okhttp-urlconnection/3.6.0/okhttp-urlconnection-3.6.0.jar(**.class)
+-injars /Users/aliceostberg/Documents/GitHub/portablecdm/App/android/maven/expolib_v1/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/2c75374a3adf4652beabe69fee736f15/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/crashlytics-2.5.5.aar/05fc1cf6f1bc2aa3a880d0fcdca0bf89/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/drawee-1.0.1.aar/18cbaa92700b12a659161eb53dad94ac/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/animated-base-1.0.1.aar/7846afd1250e3dd41cc7ddc94d1dfe11/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.0.1.aar/254e68d760ca51d646f5173851e7c443/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.0.1.aar/e5373ec1ea8135359ef54aa3e1b1ead2/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/fbcore-1.0.1.aar/42c3ffd76bd3a4e7ad053c5484a89924/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.3.8.aar/8e5899d866227a7d5f5aeeb47c8d505b/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/answers-1.3.6.aar/45cd7ec9c4a0f6905c89a7af3df563e7/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/fabric-1.3.10.aar/493abfb48206c243ec0e26ac9c2e5a79/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/beta-1.1.4.aar/2cb97524eb50dca52c6da81e23b76c17/jars/classes.jar(**.class)
+-injars /Users/aliceostberg/Documents/GitHub/portablecdm/App/node_modules/react-native-pinch/android/build/intermediates/intermediate-jars/debug/classes.jar(**.class)
+-injars /Users/aliceostberg/Documents/GitHub/portablecdm/App/android/app/build/intermediates/classes/dev19/debug(**.class)
+-outjars /Users/aliceostberg/Documents/GitHub/portablecdm/App/android/app/build/intermediates/multi-dex/dev19/debug/componentClasses.jar
+
+-libraryjars /Users/aliceostberg/Library/Android/sdk/build-tools/26.0.2/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration /Users/aliceostberg/Documents/GitHub/portablecdm/App/android/app/build/intermediates/multi-dex/dev19/debug/components.flags
+
+
+# Referenced at /Users/aliceostberg/Documents/GitHub/portablecdm/App/android/app/build/intermediates/manifests/full/dev19/debug/AndroidManifest.xml:104
+-keep class host.exp.exponent.MainApplication {
+    <init>(...);
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.ir.** {
+    <fields>;
+    <methods>;
+}
