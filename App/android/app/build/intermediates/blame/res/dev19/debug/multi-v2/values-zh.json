@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/aliceostberg/Documents/GitHub/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-zh/values-zh.xml",
+            "outputFile": "/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-zh/values-zh.xml",
             "map": [
                 {
-                    "source": "/Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.4.7.aar/976fa6696460343b8d54044aacd9a2ce/res/values-zh/values-zh.xml",
+                    "source": "/Users/rikard/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.4.7.aar/94fbb79c6f9eece6a85debfbfde15e49/res/values-zh/values-zh.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

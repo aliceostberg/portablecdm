@@ -1,10 +1,21 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/aliceostberg/Documents/GitHub/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-v14/values-v14.xml",
+            "outputFile": "/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-v14/values-v14.xml",
             "map": [
                 {
-                    "source": "/Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/3936b8fd1b66fb032641ca87c8b51d8a/res/values-v14/values-v14.xml",
+                    "source": "/Users/rikard/.gradle/caches/transforms-1/files-1.1/CreditCardEntry-1.4.8.4.aar/8e0e44e611c1a992f2f458e7b4c039f7/res/values-v14/values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "201"
+                    }
+                },
+                {
+                    "source": "/Users/rikard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/d81a308bfd950b83e4f4b15d0f657037/res/values-v14/values-v14.xml",
                     "from": {
                         "startLines": "2,7,8,9,15",
                         "startColumns": "4,4,4,4,4",
@@ -20,17 +31,6 @@
                         "endLines": "9,10,11,17,23",
                         "endColumns": "12,70,82,12,12",
                         "endOffsets": "477,548,631,1041,1463"
-                    }
-                },
-                {
-                    "source": "/Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/CreditCardEntry-1.4.8.4.aar/cc6fc4be00e412cbf37145612f96a178/res/values-v14/values-v14.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "201"
                     }
                 }
             ]

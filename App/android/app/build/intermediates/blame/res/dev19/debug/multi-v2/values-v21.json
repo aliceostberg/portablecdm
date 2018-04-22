@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/aliceostberg/Documents/GitHub/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "/Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.1.aar/b06e0cbbc5b253c0f77e6fdd152375d9/res/values-v21/values-v21.xml",
+                    "source": "/Users/rikard/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.1.aar/dfb768c0dffdf626f1552974cda95cf2/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,5,8,11",
                         "startColumns": "4,4,4,4",
@@ -23,26 +23,26 @@
                     }
                 },
                 {
-                    "source": "/Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.1.aar/f8ba4810404f39fd5467fb7a32178afa/res/values-v21/values-v21.xml",
+                    "source": "/Users/rikard/.gradle/caches/transforms-1/files-1.1/CreditCardEntry-1.4.8.4.aar/8e0e44e611c1a992f2f458e7b4c039f7/res/values-v21/values-v21.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,13",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,159,223,290,354,470,596,722,850,1022",
-                        "endLines": "2,3,4,5,6,7,8,9,12,17",
-                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
-                        "endOffsets": "154,218,285,349,465,591,717,845,1017,1355"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "191"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,282,283,290,294,298,301",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,159,223,290,20592,20708,21165,21459,21754,21926",
-                        "endLines": "2,3,4,5,282,283,290,294,300,305",
-                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
-                        "endOffsets": "154,218,285,349,20703,20829,21286,21582,21921,22259"
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "354",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "490"
                     }
                 },
                 {
-                    "source": "/Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/3936b8fd1b66fb032641ca87c8b51d8a/res/values-v21/values-v21.xml",
+                    "source": "/Users/rikard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/d81a308bfd950b83e4f4b15d0f657037/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,19,20,21,22,24,26,27,28,29,30,32,34,36,38,40,42,43,48,50,52,53,54,56,58,59,60,61,62,63,107,110,154,157,160,162,164,166,169,171,174,175,176,179,180,181,182,183,184,187,188,190,192,194,196,200,202,203,204,205,207,211,213,215,216,217,218,219,221,222,223,233,234,235,247,259,260,261,264,267,268,271,272",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -61,22 +61,22 @@
                     }
                 },
                 {
-                    "source": "/Users/aliceostberg/.gradle/caches/transforms-1/files-1.1/CreditCardEntry-1.4.8.4.aar/cc6fc4be00e412cbf37145612f96a178/res/values-v21/values-v21.xml",
+                    "source": "/Users/rikard/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.1.aar/7125ba94d2c17413b65198e8def98037/res/values-v21/values-v21.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "191"
+                        "startLines": "2,3,4,5,6,7,8,9,10,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,223,290,354,470,596,722,850,1022",
+                        "endLines": "2,3,4,5,6,7,8,9,12,17",
+                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "154,218,285,349,465,591,717,845,1017,1355"
                     },
                     "to": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "354",
-                        "endLines": "8",
-                        "endColumns": "12",
-                        "endOffsets": "490"
+                        "startLines": "2,3,4,5,282,283,290,294,298,301",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,223,290,20592,20708,21165,21459,21754,21926",
+                        "endLines": "2,3,4,5,282,283,290,294,300,305",
+                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "154,218,285,349,20703,20829,21286,21582,21921,22259"
                     }
                 }
             ]
