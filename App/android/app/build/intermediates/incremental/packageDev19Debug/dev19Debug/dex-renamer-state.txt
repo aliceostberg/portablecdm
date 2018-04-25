@@ -1,4 +1,4 @@
-#Sun Apr 22 17:01:00 CEST 2018
+#Wed Apr 25 10:07:12 CEST 2018
 path.1=classes.dex
 path.0=classes.dex
 renamed.5=classes6.dex
@@ -7,12 +7,12 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.5=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/23
-base.4=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/18
-base.3=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/21
-base.2=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/22
-base.1=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/19
-base.0=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/20
+base.5=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/152
+base.4=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/155
+base.3=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/150
+base.2=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/153
+base.1=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/151
+base.0=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/154
 path.5=classes.dex
 path.4=classes.dex
 path.3=classes.dex
