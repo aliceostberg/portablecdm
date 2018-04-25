@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/levinahlsell/Documents/GitHub/portablecdm/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-v13/values-v13.xml",
             "map": [
                 {
                     "source": "/Users/levinahlsell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/ba899025887a2feac4449304b1fb6c60/res/values-v13/values-v13.xml",
+=======
+            "outputFile": "/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-v13/values-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/clarahollander/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/55bdbc254b70be7ef7709d498d74c57b/res/values-v13/values-v13.xml",
+>>>>>>> a935a981ff25c3a3f84b14844362c253cec175af
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

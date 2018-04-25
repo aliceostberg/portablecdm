@@ -41022,7 +41022,8 @@
     "length": 89,
     "width": 50,
     "beam": 14,
-    "tonnage": 1001
+    "tonnage": 1001,
+    "phoneNumber": 123456778
   },
   {
     "mmsi": 236111951,

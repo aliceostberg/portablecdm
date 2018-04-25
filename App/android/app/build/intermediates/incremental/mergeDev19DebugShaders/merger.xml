@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="/Users/levinahlsell/Documents/GitHub/portablecdm/portablecdm/App/android/app/src/main/shaders"/></dataSet><dataSet config="dev19"><source path="/Users/levinahlsell/Documents/GitHub/portablecdm/portablecdm/App/android/app/src/dev19/shaders"/></dataSet><dataSet config="debug"><source path="/Users/levinahlsell/Documents/GitHub/portablecdm/portablecdm/App/android/app/src/debug/shaders"/></dataSet><dataSet config="dev19Debug"><source path="/Users/levinahlsell/Documents/GitHub/portablecdm/portablecdm/App/android/app/src/dev19Debug/shaders"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/src/main/shaders"/></dataSet><dataSet config="dev19"><source path="/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/src/dev19/shaders"/></dataSet><dataSet config="debug"><source path="/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/src/debug/shaders"/></dataSet><dataSet config="dev19Debug"><source path="/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/src/dev19Debug/shaders"/></dataSet></merger>
+>>>>>>> a935a981ff25c3a3f84b14844362c253cec175af

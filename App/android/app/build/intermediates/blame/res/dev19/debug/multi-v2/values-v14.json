@@ -1,10 +1,28 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/levinahlsell/Documents/GitHub/portablecdm/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-v14/values-v14.xml",
             "map": [
                 {
                     "source": "/Users/levinahlsell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/ba899025887a2feac4449304b1fb6c60/res/values-v14/values-v14.xml",
+=======
+            "outputFile": "/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "/Users/clarahollander/.gradle/caches/transforms-1/files-1.1/CreditCardEntry-1.4.8.4.aar/c01b6a2498e488a8738546700d494e0b/res/values-v14/values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "201"
+                    }
+                },
+                {
+                    "source": "/Users/clarahollander/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/55bdbc254b70be7ef7709d498d74c57b/res/values-v14/values-v14.xml",
+>>>>>>> a935a981ff25c3a3f84b14844362c253cec175af
                     "from": {
                         "startLines": "2,7,8,9,15",
                         "startColumns": "4,4,4,4,4",
@@ -21,6 +39,7 @@
                         "endColumns": "12,70,82,12,12",
                         "endOffsets": "477,548,631,1041,1463"
                     }
+<<<<<<< HEAD
                 },
                 {
                     "source": "/Users/levinahlsell/.gradle/caches/transforms-1/files-1.1/CreditCardEntry-1.4.8.4.aar/656412b86326cf32b0a1b9ad1b086713/res/values-v14/values-v14.xml",
@@ -32,6 +51,8 @@
                         "endColumns": "12",
                         "endOffsets": "201"
                     }
+=======
+>>>>>>> a935a981ff25c3a3f84b14844362c253cec175af
                 }
             ]
         },

@@ -74,10 +74,17 @@
             ]
         },
         {
+<<<<<<< HEAD
             "outputFile": "/Users/levinahlsell/Documents/GitHub/portablecdm/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-bs/values-bs.xml",
             "map": [
                 {
                     "source": "/Users/levinahlsell/.gradle/caches/transforms-1/files-1.1/play-services-ads-9.8.0.aar/db28ad1b5b8e1f2526ee2fc045a9f671/res/values-bs/values.xml",
+=======
+            "outputFile": "/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-bs/values-bs.xml",
+            "map": [
+                {
+                    "source": "/Users/clarahollander/.gradle/caches/transforms-1/files-1.1/play-services-ads-9.8.0.aar/a5b0515d2cc7efe09371bef60bee3545/res/values-bs/values.xml",
+>>>>>>> a935a981ff25c3a3f84b14844362c253cec175af
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0",
@@ -94,6 +101,7 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "/Users/levinahlsell/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.8.0.aar/2d6ba17fafdc02cd7227311b8270e363/res/values-bs/values.xml",
                     "from": {
                         "startLines": "4",
@@ -112,6 +120,9 @@
                 },
                 {
                     "source": "/Users/levinahlsell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/ba899025887a2feac4449304b1fb6c60/res/values-bs/values-bs.xml",
+=======
+                    "source": "/Users/clarahollander/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/55bdbc254b70be7ef7709d498d74c57b/res/values-bs/values-bs.xml",
+>>>>>>> a935a981ff25c3a3f84b14844362c253cec175af
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -128,7 +139,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "/Users/levinahlsell/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/3877039ce22ff2d78c395312b4e535ef/res/values-bs/values.xml",
+=======
+                    "source": "/Users/clarahollander/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/9319c08453c94d17c712ca0b11af4f60/res/values-bs/values.xml",
+>>>>>>> a935a981ff25c3a3f84b14844362c253cec175af
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -143,6 +158,26 @@
                         "endColumns": "107,191,127,111,208,127,130,212,108,191,128,208,175,97,94,113",
                         "endOffsets": "2250,2442,2570,2682,2891,3019,3150,3563,3672,3864,3993,4202,4378,4476,4571,4685"
                     }
+<<<<<<< HEAD
+=======
+                },
+                {
+                    "source": "/Users/clarahollander/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.8.0.aar/04f3c25d8f9834545ffbe031de04a411/res/values-bs/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "199",
+                        "endOffsets": "484"
+                    },
+                    "to": {
+                        "startLines": "29",
+                        "startColumns": "4",
+                        "startOffsets": "3155",
+                        "endColumns": "199",
+                        "endOffsets": "3350"
+                    }
+>>>>>>> a935a981ff25c3a3f84b14844362c253cec175af
                 }
             ]
         }
