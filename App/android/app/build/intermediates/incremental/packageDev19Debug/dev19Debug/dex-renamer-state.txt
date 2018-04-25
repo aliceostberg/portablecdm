@@ -1,18 +1,30 @@
-#Wed Apr 25 10:07:12 CEST 2018
+#Wed Apr 25 10:58:43 CEST 2018
 path.1=classes.dex
 path.0=classes.dex
+renamed.9=classes10.dex
+renamed.8=classes9.dex
+renamed.7=classes8.dex
+renamed.6=classes7.dex
 renamed.5=classes6.dex
 renamed.4=classes5.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
+base.9=/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/1
 renamed.1=classes2.dex
+base.8=/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/1
 renamed.0=classes.dex
-base.5=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/152
-base.4=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/155
-base.3=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/150
-base.2=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/153
-base.1=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/151
-base.0=/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/154
+base.7=/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/1
+base.6=/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/156
+base.5=/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/159
+base.4=/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/158
+base.3=/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/160
+base.2=/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/161
+base.1=/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/1
+base.0=/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/transforms/dexMerger/dev19/debug/157
+path.9=classes4.dex
+path.8=classes3.dex
+path.7=classes2.dex
+path.6=classes.dex
 path.5=classes.dex
 path.4=classes.dex
 path.3=classes.dex

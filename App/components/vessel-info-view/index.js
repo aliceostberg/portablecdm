@@ -86,6 +86,10 @@ class VesselInfo extends Component {
           {(!!extraInfo && !!extraInfo.tonnage) &&
             <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Tonnage: </Text>{extraInfo.tonnage}kg</Text>
           }
+
+          {(!!extraInfo && !!extraInfo.phoneNumber) &&
+            <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Phone number: </Text>{extraInfo.phoneNumber}</Text>
+          }
         </View>
       </View>
     );
