@@ -31,7 +31,7 @@ class VesselInfo extends Component {
 
     componentDidMount() {
         this.props.fetchVesselFromIMO(this.props.vessel.imo.split('IMO:')[1]).then(() => {
-            // DOUBLE EQUALS!! 
+            // DOUBLE EQUALS!!
             const ship = ships.find(ship => ship.mmsi == this.props.vessel.mmsi.split('MMSI:')[1]);
             this.setState({extraInfo: ship});
         });
@@ -46,17 +46,17 @@ class VesselInfo extends Component {
 
     return(
 
-      <View style={styles.container}>  
+      <View style={styles.container}>
         <TopHeader title = 'Vessel Info' firstPage navigation={this.props.navigation} rightIconFunction={this.goToStateList}/>
 
         <View style={styles.pictureContainer}>
           <Image
-            style={{ 
+            style={{
             width: Dimensions.get('window').width-20,
             height: Dimensions.get('window').height/4,
             borderRadius: 5,
             }}
-            source={{uri:vessel.photoURL }}  
+            source={{uri:vessel.photoURL }}
             />
         </View>
 
@@ -66,12 +66,12 @@ class VesselInfo extends Component {
 
         <View style={styles.infoContainer}>
           {!!vessel.vesselType &&
-          <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Vessel Type:  </Text>{vessel.vesselType.replace(/_/g, ' ')}</Text> 
+          <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Vessel Type:  </Text>{vessel.vesselType.replace(/_/g, ' ')}</Text>
           }
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>IMO:  </Text>{vessel.imo.replace('urn:mrn:stm:vessel:IMO:', '')}</Text>
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>MMSI:  </Text>{vessel.mmsi.replace('urn:mrn:stm:vessel:MMSI:', '')}</Text>
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Call Sign:  </Text>{vessel.callSign}</Text>
-          {!!vessel.flag && 
+          {!!vessel.flag &&
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Flag: </Text>{vessel.flag}</Text>
           }
           {!!vessel.builtYear &&
@@ -82,6 +82,9 @@ class VesselInfo extends Component {
           }
           {(!!extraInfo && !!extraInfo.beam) &&
             <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Beam: </Text>{extraInfo.beam}m</Text>
+          }
+          {(!!extraInfo && !!extraInfo.tonnage) &&
+            <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Tonnage: </Text>{extraInfo.tonnage}kg</Text>
           }
         </View>
       </View>
