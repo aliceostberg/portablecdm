@@ -1,6 +1,21 @@
 {
     "logs": [
         {
+            "outputFile": "/Users/levinahlsell/Documents/GitHub/portablecdm/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-te-rIN/values-te-rIN.xml",
+            "map": [
+                {
+                    "source": "/Users/levinahlsell/.gradle/caches/transforms-1/files-1.1/exoplayer-r2.0.3.aar/ac81beb0dc05da09d8ee08e5cdf8bb4b/res/values-te-rIN/values-te-rIN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,145,219,290,360,439,514",
+                        "endColumns": "89,73,70,69,78,74,67",
+                        "endOffsets": "140,214,285,355,434,509,577"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-te-rIN/values-te-rIN.xml",
             "map": [
                 {

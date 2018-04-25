@@ -14,6 +14,21 @@
                     }
                 }
             ]
+        },
+        {
+            "outputFile": "/Users/levinahlsell/Documents/GitHub/portablecdm/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-ur-rPK/values-ur-rPK.xml",
+            "map": [
+                {
+                    "source": "/Users/levinahlsell/.gradle/caches/transforms-1/files-1.1/exoplayer-r2.0.3.aar/ac81beb0dc05da09d8ee08e5cdf8bb4b/res/values-ur-rPK/values-ur-rPK.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,142,212,284,351,426,502",
+                        "endColumns": "86,69,71,66,74,75,65",
+                        "endOffsets": "137,207,279,346,421,497,563"
+                    }
+                }
+            ]
         }
     ]
 }

@@ -1,6 +1,21 @@
 {
     "logs": [
         {
+            "outputFile": "/Users/levinahlsell/Documents/GitHub/portablecdm/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-et-rEE/values-et-rEE.xml",
+            "map": [
+                {
+                    "source": "/Users/levinahlsell/.gradle/caches/transforms-1/files-1.1/exoplayer-r2.0.3.aar/ac81beb0dc05da09d8ee08e5cdf8bb4b/res/values-et-rEE/values-et-rEE.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,133,207,274,340,417,491",
+                        "endColumns": "77,73,66,65,76,73,65",
+                        "endOffsets": "128,202,269,335,412,486,552"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/rikard/Documents/GitHub/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-et-rEE/values-et-rEE.xml",
             "map": [
                 {
