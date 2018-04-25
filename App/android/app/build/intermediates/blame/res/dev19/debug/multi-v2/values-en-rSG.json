@@ -23,17 +23,10 @@
             ]
         },
         {
-<<<<<<< HEAD
-            "outputFile": "/Users/levinahlsell/Documents/GitHub/portablecdm/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-en-rSG/values-en-rSG.xml",
-            "map": [
-                {
-                    "source": "/Users/levinahlsell/.gradle/caches/transforms-1/files-1.1/play-services-wallet-9.8.0.aar/40cb552e4e30337ba804f0d24f40b8c0/res/values-en-rSG/values.xml",
-=======
             "outputFile": "/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-en-rSG/values-en-rSG.xml",
             "map": [
                 {
                     "source": "/Users/clarahollander/.gradle/caches/transforms-1/files-1.1/play-services-wallet-9.8.0.aar/435d43b45b7f55f9107d45bb44595f5c/res/values-en-rSG/values.xml",
->>>>>>> a935a981ff25c3a3f84b14844362c253cec175af
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

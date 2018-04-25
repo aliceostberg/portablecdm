@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "/Users/levinahlsell/Documents/GitHub/portablecdm/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-my-rMM/values-my-rMM.xml",
-            "map": [
-                {
-                    "source": "/Users/levinahlsell/.gradle/caches/transforms-1/files-1.1/exoplayer-r2.0.3.aar/ac81beb0dc05da09d8ee08e5cdf8bb4b/res/values-my-rMM/values-my-rMM.xml",
-=======
             "outputFile": "/Users/clarahollander/Documents/Github2/portablecdm/App/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-my-rMM/values-my-rMM.xml",
             "map": [
                 {
                     "source": "/Users/clarahollander/.gradle/caches/transforms-1/files-1.1/exoplayer-r2.0.3.aar/eb4bbd495c97c080013f8a1b1a6ee541/res/values-my-rMM/values-my-rMM.xml",
->>>>>>> a935a981ff25c3a3f84b14844362c253cec175af
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
