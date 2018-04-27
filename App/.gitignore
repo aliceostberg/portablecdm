@@ -115,3 +115,6 @@ android/app/gradle/wrapper/gradle-wrapper.jar
 android/app/gradle/wrapper/gradle-wrapper.properties
 android/.gradlew
 android/gradlew.bat
+android/local.properties
+android/app/app.iml
+android/local.properties
