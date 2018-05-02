@@ -47,7 +47,7 @@ class VesselInfo extends Component {
     return(
 
       <View style={styles.container}>
-        <TopHeader title = 'Vessel Info' firstPage navigation={this.props.navigation} rightIconFunction={this.goToStateList}/>
+        <TopHeader title = 'Vessel Test' firstPage navigation={this.props.navigation} rightIconFunction={this.goToStateList}/>
 
         <View style={styles.pictureContainer}>
           <Image
@@ -91,11 +91,92 @@ class VesselInfo extends Component {
             <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Phone number: </Text>{extraInfo.phoneNumber}</Text>
           }
         </View>
+
+        <View style={styles.infoContainer}>
+        <Text style={styles.infoText}>{"Testmiljö"}</Text>
+
+        </View>
       </View>
     );
   }
 }
 
+/*class TodoApp extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { items: [], text: '' };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  render() {
+    return React.createElement(
+      "div",
+      null,
+      React.createElement(
+        "h3",
+        null,
+        "TODO"
+      ),
+      React.createElement(TodoList, { items: this.state.items }),
+      React.createElement(
+        "form",
+        { onSubmit: this.handleSubmit },
+        React.createElement(
+          "label",
+          { htmlFor: "new-todo" },
+          "What needs to be done?"
+        ),
+        React.createElement("input", {
+          id: "new-todo",
+          onChange: this.handleChange,
+          value: this.state.text
+        }),
+        React.createElement(
+          "button",
+          null,
+          "Add #",
+          this.state.items.length + 1
+        )
+      )
+    );
+  }
+
+  handleChange(e) {
+    this.setState({ text: e.target.value });
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    if (!this.state.text.length) {
+      return;
+    }
+    const newItem = {
+      text: this.state.text,
+      id: Date.now()
+    };
+    this.setState(prevState => ({
+      items: prevState.items.concat(newItem),
+      text: ''
+    }));
+  }
+}
+
+class TodoList extends React.Component {
+  render() {
+    return React.createElement(
+      "ul",
+      null,
+      this.props.items.map(item => React.createElement(
+        "li",
+        { key: item.id },
+        item.text
+      ))
+    );
+  }
+}
+render(React.createElement(TodoApp, null), mountNode);
+*/
 const styles = StyleSheet.create({
   container: {
     flex: 1,
