@@ -6,6 +6,7 @@ import {
   StyleSheet,
   Image,
   Dimensions,
+  TextInput,
 } from 'react-native';
 
 import {
@@ -92,8 +93,19 @@ class VesselInfo extends Component {
           }
         </View>
 
-        <View style={styles.infoContainer}>
-        <Text style={styles.infoText}>{"Testmiljö"}</Text>
+
+
+
+        <View>
+        <View style={styles.EditorContainer}>
+        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+          <TextInput style={styles.EditorContainer}
+            onChangeText={(text) => this.setState({input: text})}
+          />
+          <Text>{this.state.input}</Text>
+        </View>
+
+
 
         </View>
       </View>
@@ -214,6 +226,22 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     flexDirection: 'column',
     borderRadius: 5,
+  },
+  EditorContainer: {
+    backgroundColor: colorScheme.primaryContainerColor,
+    marginTop: 10,
+    marginBottom: 10,
+    marginLeft: 10,
+    marginRight: 10,
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingLeft: 10,
+    flexDirection: 'column',
+    borderRadius: 5,
+
+//{height: 40, borderColor: 'gray', borderWidth: 1}
+
+
   },
   infoText: {
     fontSize: 14,
