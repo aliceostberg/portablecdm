@@ -84,7 +84,7 @@ class VesselInfo extends Component {
             <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Beam: </Text>{extraInfo.beam}m</Text>
           }
           {(!!extraInfo && !!extraInfo.tonnage) &&
-            <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Tonnage: </Text>{extraInfo.tonnage}kg</Text>
+            <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Tonnage: </Text>{extraInfo.tonnage} t</Text>
           }
 
           {(!!extraInfo && !!extraInfo.phoneNumber) &&

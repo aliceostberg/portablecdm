@@ -11,7 +11,7 @@ import {
   Alert,
 } from 'react-native';
 
-import {  
+import {
   Text,
   List,
   ListItem,
@@ -24,11 +24,11 @@ import {
 import TopHeader from '../top-header-view';
 import MiniHeader from '../mini-header-view';
 import colorScheme from '../../config/colors';
-import { 
-  createVesselList, 
-  deleteVesselList, 
-  addVesselToList, 
-  removeVesselFromList, 
+import {
+  createVesselList,
+  deleteVesselList,
+  addVesselToList,
+  removeVesselFromList,
   appendVesselToPortCall,
   clearVesselResult,
   filterChangeVesselList,
@@ -62,16 +62,16 @@ class VesselList extends Component {
     return(
       <View style={styles.container}>
         <TopHeader
-          title="Vessel Lists"  
+          title="Vessel Lists"
           navigation = {this.props.navigation}
         />
         <View style={styles.rowContainer}>
           <SearchBar
-            autoCorrect={false} 
+            autoCorrect={false}
             containerStyle = {styles.searchBarContainer}
             noIcon
             inputStyle = {{backgroundColor: colorScheme.primaryContainerColor, fontSize: 15}}
-            lightTheme  
+            lightTheme
             placeholder='Enter a name for a list'
             placeholderTextColor = {colorScheme.tertiaryTextColor}
             onChangeText={text => this.setState({newListName: text})}
@@ -81,14 +81,14 @@ class VesselList extends Component {
             containerViewStyle={styles.buttonContainer}
             small
             title="Add"
-            backgroundColor = {colorScheme.primaryColor} 
+            backgroundColor = {colorScheme.primaryColor}
             disabled={this.state.newListName.length <= 0}
             disabledStyle={{
               backgroundColor: colorScheme.primaryColor
             }}
             color={this.state.newListName <= 0 ? colorScheme.tertiaryTextColor : colorScheme.primaryTextColor}
             onPress={() => this.props.createVesselList(this.state.newListName)}
-            /> 
+            />
         </View>
         <List>
           {/* Render all vessel lists, together with the vessels in those lists */}
@@ -128,11 +128,11 @@ class VesselList extends Component {
           />
           <View style={styles.rowContainer}>
             <SearchBar
-              autoCorrect={false} 
+              autoCorrect={false}
               containerStyle = {styles.searchBarContainer}
               clearIcon
               inputStyle = {{backgroundColor: colorScheme.primaryContainerColor}}
-              lightTheme  
+              lightTheme
               placeholder='Search by name or IMO number'
               placeholderTextColor = {colorScheme.tertiaryTextColor}
               onChangeText={text => this.setState({newVessel: text})}
@@ -173,10 +173,10 @@ class VesselList extends Component {
                         });
               }
             }
-            /> 
-            
+            />
+
           </View>
-          {!!this.props.foundVessel && 
+          {!!this.props.foundVessel &&
             <View
                 style={styles.addToListContainer}
             >
@@ -185,6 +185,7 @@ class VesselList extends Component {
                 <Text>Name: {this.props.foundVessel.name}</Text>
                 <Text>Type: {this.props.foundVessel.vesselType}</Text>
                 <Text>Call sign: {this.props.foundVessel.callSign}</Text>
+                <Text>Tonnage: {this.props.foundVessel.tonnage}</Text>
               </View>
               <View
                 style={{alignSelf: 'center'}}
@@ -193,7 +194,7 @@ class VesselList extends Component {
                   title="Add to List"
                   textStyle={{color: colorScheme.primaryTextColor, fontSize: 9}}
                   buttonStyle={styles.buttonStyle}
-                  onPress={() => this.props.addVesselToList(this.props.foundVessel, this.state.selectedList)}                
+                  onPress={() => this.props.addVesselToList(this.props.foundVessel, this.state.selectedList)}
                 />
               </View>
 
@@ -246,7 +247,7 @@ const styles = StyleSheet.create({
     flex: 3,
     marginRight: 0,
     borderBottomWidth: 0,
-    borderTopWidth: 0,      
+    borderTopWidth: 0,
   },
   buttonContainer: {
     flex: 1,
@@ -256,7 +257,7 @@ const styles = StyleSheet.create({
   },
   addToListContainer: {
     backgroundColor: colorScheme.primaryContainerColor,
-    alignSelf: 'center', 
+    alignSelf: 'center',
     flexDirection: 'row',
     marginTop: 10,
     paddingTop: 10,
@@ -264,9 +265,9 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     marginLeft: 10,
     marginRight: 10,
-    borderColor: colorScheme.tertiaryTextColor, 
+    borderColor: colorScheme.tertiaryTextColor,
     borderWidth: 1,
-    borderRadius: 5, 
+    borderRadius: 5,
   },
   vesselListStyle: {
     backgroundColor: colorScheme.primaryContainerColor,
@@ -276,15 +277,15 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     marginLeft: 10,
     marginRight: 10,
-    borderColor: colorScheme.tertiaryTextColor, 
+    borderColor: colorScheme.tertiaryTextColor,
     borderWidth: 1,
-    borderRadius: 5, 
+    borderRadius: 5,
   },
   buttonStyle: {
     backgroundColor: colorScheme.primaryColor,
-    borderColor: colorScheme.primaryColor, 
+    borderColor: colorScheme.primaryColor,
     borderWidth: 1,
-    borderRadius: 5, 
+    borderRadius: 5,
   },
   titleText: {
     color: colorScheme.quaternaryTextColor,
