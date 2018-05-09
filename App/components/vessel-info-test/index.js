@@ -7,6 +7,7 @@ import {
   Image,
   Dimensions,
   TextInput,
+  ScrollView
 } from 'react-native';
 
 import {
@@ -50,6 +51,7 @@ class VesselInfo extends Component {
       <View style={styles.container}>
         <TopHeader title = 'Vessel Test' firstPage navigation={this.props.navigation} rightIconFunction={this.goToStateList}/>
 
+        <ScrollView>
         <View style={styles.pictureContainer}>
           <Image
             style={{
@@ -96,18 +98,32 @@ class VesselInfo extends Component {
 
 
 
-        <View>
+
         <View style={styles.EditorContainer}>
         <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+
           <TextInput style={styles.EditorContainer}
             onChangeText={(text) => this.setState({input: text})}
           />
           <Text>{this.state.input}</Text>
         </View>
 
-
-
+        <View style={styles.EditorContainer}>
+        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
         </View>
+
+        </ScrollView>
       </View>
     );
   }
@@ -227,7 +243,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     borderRadius: 5,
   },
-  EditorContainer: {
+    EditorContainer: {
     backgroundColor: colorScheme.primaryContainerColor,
     marginTop: 10,
     marginBottom: 10,
@@ -242,7 +258,7 @@ const styles = StyleSheet.create({
 //{height: 40, borderColor: 'gray', borderWidth: 1}
 
 
-  },
+},
   infoText: {
     fontSize: 14,
     color: colorScheme.quaternaryTextColor,
