@@ -7,7 +7,9 @@ import {
   Image,
   Dimensions,
   TextInput,
-  ScrollView
+  ScrollView,
+  Button,
+  AsyncStorage
 } from 'react-native';
 
 import {
@@ -28,6 +30,8 @@ class VesselInfo extends Component {
 
         this.state = {
             extraInfo: undefined,
+
+        myKey: null
         };
     }
 
@@ -39,7 +43,32 @@ class VesselInfo extends Component {
         });
     }
 
+    async getKey() {
+       try {
+         const text = await AsyncStorage.getItem('@MySuperStore:key');
+         this.setState({myKey: text});
+       } catch (error) {
+         console.log("Error retrieving data" + error);
+       }
+     }
 
+     async saveKey(text) {
+       try {
+         await AsyncStorage.setItem('@MySuperStore:key', text);
+       } catch (error) {
+         console.log("Error saving data" + error);
+       }
+     }
+
+     async resetKey() {
+       try {
+         await AsyncStorage.removeItem('@MySuperStore:key');
+         const text = await AsyncStorage.getItem('@MySuperStore:key');
+         this.setState({myKey: text});
+       } catch (error) {
+         console.log("Error resetting data" + error);
+       }
+     }
   render(){
     const { extraInfo } = this.state;
     const { navigate, state } = this.props.navigation;
@@ -103,24 +132,40 @@ class VesselInfo extends Component {
         <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
 
           <TextInput style={styles.EditorContainer}
-            onChangeText={(text) => this.setState({input: text})}
-          />
-          <Text>{this.state.input}</Text>
-        </View>
+          placeholder="Skriv din kommentar här :)"
+           text={this.state.myKey}
+           onChangeText={(text) => this.saveKey(text)}
 
+          />
+
+        </View>
+        <Button
+                style={styles.formButton}
+                onPress={this.getKey.bind(this)}
+                title="Posta din kommentar"
+                color="#2196f3"
+                accessibilityLabel="Posta din kommentar"
+              />
+              <Button
+                      style={styles.formButton}
+                      onPress={this.saveKey.bind(this)}
+                      title="spara din kommentar"
+                      color="#2196f3"
+                      accessibilityLabel="Spara din kommentar"
+                    />
+
+              <Button
+                style={styles.formButton}
+                onPress={this.resetKey.bind(this)}
+                title="Ta bort kommentar"
+                color="#f44336"
+                accessibilityLabel="Ta bort kommentar"
+              />
+<Text style={styles.infoText}>{"Tidigare kommentarer"}</Text>
         <View style={styles.EditorContainer}>
-        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
-        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
-        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
-        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
-        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
-        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
-        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
-        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
-        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
-        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
-        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
-        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+        <Text> {this.state.myKey}
+        </Text>
+
         </View>
 
         </ScrollView>
