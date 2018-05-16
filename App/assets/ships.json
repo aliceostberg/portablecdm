@@ -5536,7 +5536,12 @@
     "mmsi": 220609000,
     "imo": 9327475,
     "length": 91,
-    "beam": 15
+    "beam": 15,
+    "tonnage": 1001,
+    "phoneNumber": 123456778,
+    "comment1": "har Stålvajjer",
+    "comment2": "Gillar gröt",
+    "comment3": "arga polacker"
   },
   {
     "mmsi": 232168000,
@@ -41022,7 +41027,10 @@
     "length": 89,
     "beam": 14,
     "tonnage": 1001,
-    "phoneNumber": 123456778
+    "phoneNumber": 123456778,
+    "comment1": 1,
+    "comment2": 2,
+    "comment3": 3
   },
   {
     "mmsi": 236111951,

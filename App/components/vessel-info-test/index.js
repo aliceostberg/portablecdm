@@ -69,6 +69,33 @@ class VesselInfo extends Component {
          console.log("Error resetting data" + error);
        }
      }
+
+    /* FetchValue = () => {
+    AsyncStorage.getItem("Favorites").then((value) => {
+      this.setState({
+        favs: JSON.parse(value)
+      });
+    }).done();
+  };
+
+  SaveValue = () => {
+    const newFavs = [...this.state.favs, this.state.UserInput];
+    this.setState({ favs: newFavs, UserInput: '' }, () => {
+        AsyncStorage.setItem("Favorites", JSON.stringify(this.state.favs));
+        Keyboard.dismiss()
+    });
+  };
+
+  RemoveValue(item){
+          if(item !== null &&  item !== undefined){
+          const index = this.state.favs.indexOf(item);
+          const newArray = [...this.state.favs];
+          newArray.splice(index,1);
+          this.setState({ favs: newArray });
+          AsyncStorage.setItem("Favorites", JSON.stringify(newArray));
+        };
+      };
+*/
   render(){
     const { extraInfo } = this.state;
     const { navigate, state } = this.props.navigation;
@@ -124,12 +151,26 @@ class VesselInfo extends Component {
           }
         </View>
 
+        <View style={styles.EditorContainer}>
+        <Text style={{fontWeight: 'bold'}}>Tidigare kommentarer:</Text>
+        {(!!extraInfo && !!extraInfo.comment1) &&
+          <Text style={styles.infoText}> {extraInfo.comment1}</Text>
+        }
+        {(!!extraInfo && !!extraInfo.comment2) &&
+          <Text style={styles.infoText}> {extraInfo.comment2}</Text>
+        }
+        {(!!extraInfo && !!extraInfo.comment3) &&
+          <Text style={styles.infoText}> {extraInfo.comment3}</Text>
+        }
+        <Text style={styles.infoText}> {this.state.myKey} </Text>
+
+        </View>
 
 
 
 
         <View style={styles.EditorContainer}>
-        <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+        <Text style={styles.infoText}>{"input"}</Text>
 
           <TextInput style={styles.EditorContainer}
           placeholder="Skriv din kommentar här :)"
@@ -161,15 +202,9 @@ class VesselInfo extends Component {
                 color="#f44336"
                 accessibilityLabel="Ta bort kommentar"
               />
-<Text style={styles.infoText}>{"Tidigare kommentarer"}</Text>
-        <View style={styles.EditorContainer}>
-        <Text> {this.state.myKey}
-        </Text>
 
-        </View>
-
-        </ScrollView>
-      </View>
+              </ScrollView>
+            </View>
     );
   }
 }
