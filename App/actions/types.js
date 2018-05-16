@@ -81,3 +81,6 @@ export const ADD_FAVORITE_LOCATIONS = 'add_favorite_location';
 
 /* ERRORS */
 export const ERR_DISPATCHED = 'dispatched';
+
+
+export const SETTINGS_CHANGE_COMMENT= 'settings_change_comment';

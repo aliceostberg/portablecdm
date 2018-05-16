@@ -152,6 +152,7 @@ class VesselInfo extends Component {
                       title="spara din kommentar"
                       color="#2196f3"
                       accessibilityLabel="Spara din kommentar"
+
                     />
 
               <Button
@@ -171,7 +172,7 @@ class VesselInfo extends Component {
         </ScrollView>
       </View>
     );
-  }
+  }// slut på render
 }
 
 /*class TodoApp extends Component {
@@ -315,9 +316,11 @@ function mapStateToProps(state) {
         selectedPortCall: state.portCalls.selectedPortCall,
         vessel: state.portCalls.vessel,
         extendedVessel: state.vessel.vessel,
+        changecomment: state.settings.comment,
     }
 }
 
 export default connect(mapStateToProps, {
     fetchVesselFromIMO,
+    changecomment,
 })(VesselInfo);
