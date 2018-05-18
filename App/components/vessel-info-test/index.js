@@ -19,7 +19,8 @@ import TopHeader from '../top-header-view';
 import colorScheme from '../../config/colors';
 
 import {
-    fetchVesselFromIMO
+    fetchVesselFromIMO,
+    changecomment
 } from '../../actions';
 
 import ships from '../../assets/ships';
@@ -27,7 +28,9 @@ import ships from '../../assets/ships';
 class VesselInfo extends Component {
     constructor(props) {
         super(props);
-
+        this.state = {
+            comment: props.comment
+        };
         this.state = {
             extraInfo: undefined,
 
@@ -45,19 +48,22 @@ class VesselInfo extends Component {
 
     async getKey() {
        try {
-         const text = await AsyncStorage.getItem('@MySuperStore:key');
-         this.setState({myKey: text});
+         const text = this.props.comment;
+         this.setState({comment: text});
        } catch (error) {
          console.log("Error retrieving data" + error);
        }
      }
 
      async saveKey(text) {
-       try {
-         await AsyncStorage.setItem('@MySuperStore:key', text);
+    //  ()try {
+         //await this.setState(comment, text);
+        this.props.changecomment(text)
+
+        /*  await this.props.changecomment(this.props.comment, text);
        } catch (error) {
-         console.log("Error saving data" + error);
-       }
+         console.log("Error saving data " + error);
+       }*/
      }
 
      async resetKey() {
@@ -73,6 +79,7 @@ class VesselInfo extends Component {
     const { extraInfo } = this.state;
     const { navigate, state } = this.props.navigation;
     const { selectedPortCall, activeItemKey } = this.props;
+    const { comment } = this.props;
     const vessel = this.props.extendedVessel ? this.props.extendedVessel : this.props.vessel;
 
     return(
@@ -103,6 +110,7 @@ class VesselInfo extends Component {
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>IMO:  </Text>{vessel.imo.replace('urn:mrn:stm:vessel:IMO:', '')}</Text>
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>MMSI:  </Text>{vessel.mmsi.replace('urn:mrn:stm:vessel:MMSI:', '')}</Text>
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Call Sign:  </Text>{vessel.callSign}</Text>
+
           {!!vessel.flag &&
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Flag: </Text>{vessel.flag}</Text>
           }
@@ -122,6 +130,7 @@ class VesselInfo extends Component {
           {(!!extraInfo && !!extraInfo.phoneNumber) &&
             <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Phone number: </Text>{extraInfo.phoneNumber}</Text>
           }
+
         </View>
 
 
@@ -133,7 +142,7 @@ class VesselInfo extends Component {
 
           <TextInput style={styles.EditorContainer}
           placeholder="Skriv din kommentar här :)"
-           text={this.state.myKey}
+           text={comment}
            onChangeText={(text) => this.saveKey(text)}
 
           />
@@ -148,7 +157,8 @@ class VesselInfo extends Component {
               />
               <Button
                       style={styles.formButton}
-                      onPress={this.saveKey.bind(this)}
+                  onPress={this.saveKey.bind(this)}
+
                       title="spara din kommentar"
                       color="#2196f3"
                       accessibilityLabel="Spara din kommentar"
@@ -164,7 +174,7 @@ class VesselInfo extends Component {
               />
 <Text style={styles.infoText}>{"Tidigare kommentarer"}</Text>
         <View style={styles.EditorContainer}>
-        <Text> {this.state.myKey}
+        <Text> {comment}
         </Text>
 
         </View>
@@ -316,7 +326,8 @@ function mapStateToProps(state) {
         selectedPortCall: state.portCalls.selectedPortCall,
         vessel: state.portCalls.vessel,
         extendedVessel: state.vessel.vessel,
-        changecomment: state.settings.comment,
+        comment: state.settings.comment,
+
     }
 }
 

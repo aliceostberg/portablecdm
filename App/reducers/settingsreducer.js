@@ -35,7 +35,7 @@ const INITIAL_STATE = {
     scheme: 'http://',
   },
   hosts: [],
-  comment: 'hejsan',
+  comment: ['ewfwe'],
   rememberLogin: false,
   maxHoursTimeDifference: 72,
   displayOnTimeProbabilityTreshold: 50,
