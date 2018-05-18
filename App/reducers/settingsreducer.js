@@ -113,9 +113,14 @@ const settingsReducer = (state = INITIAL_STATE, action) => {
     case CACHE_CHANGE_LIMIT:
       return { ...state, cacheLimit: action.payload };
       case SETTINGS_CHANGE_COMMENT:
-      return { ...state, comment: action.payload };
+    //  return { ...state, comment: action.payload };
+//      if(state.comment.includes(action.payload)) return state;
+      return { ...state, comment: [...state.comment, action.payload]};
+
+
     default:
       return state;
+
   }
 }
 

@@ -29,7 +29,7 @@ class VesselInfo extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            comment: props.comment
+            comment: [props.comment]
         };
         this.state = {
             extraInfo: undefined,
@@ -58,8 +58,8 @@ class VesselInfo extends Component {
      async saveKey(text) {
     //  ()try {
          //await this.setState(comment, text);
-        this.props.changecomment(text)
-
+    //    this.props.changecomment(text)
+this.props.changecomment(text)
         /*  await this.props.changecomment(this.props.comment, text);
        } catch (error) {
          console.log("Error saving data " + error);
@@ -80,6 +80,7 @@ class VesselInfo extends Component {
     const { navigate, state } = this.props.navigation;
     const { selectedPortCall, activeItemKey } = this.props;
     const { comment } = this.props;
+    const { temp } = '';
     const vessel = this.props.extendedVessel ? this.props.extendedVessel : this.props.vessel;
 
     return(
@@ -142,8 +143,9 @@ class VesselInfo extends Component {
 
           <TextInput style={styles.EditorContainer}
           placeholder="Skriv din kommentar här :)"
-           text={comment}
-           onChangeText={(text) => this.saveKey(text)}
+          // text={comment}
+          onChangeText={(text) => this.saveKey(text)}
+          // onChangeText={(temp)}
 
           />
 
@@ -157,7 +159,7 @@ class VesselInfo extends Component {
               />
               <Button
                       style={styles.formButton}
-                  onPress={this.saveKey.bind(this)}
+                  onPress={this.saveKey.bind(temp)}
 
                       title="spara din kommentar"
                       color="#2196f3"
