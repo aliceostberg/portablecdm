@@ -35,7 +35,7 @@ const INITIAL_STATE = {
     scheme: 'http://',
   },
   hosts: [],
-  comment: ['ewfwe'],
+  comment: [''],
   rememberLogin: false,
   maxHoursTimeDifference: 72,
   displayOnTimeProbabilityTreshold: 50,
@@ -116,7 +116,7 @@ const settingsReducer = (state = INITIAL_STATE, action) => {
     //  return { ...state, comment: action.payload };
 //      if(state.comment.includes(action.payload)) return state;
       return { ...state, comment: [action.payload, ...state.comment]};
-      
+
 
 
     default:

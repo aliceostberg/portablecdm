@@ -96,7 +96,7 @@ class VesselInfo extends Component {
     return(
 
       <View style={styles.container}>
-        <TopHeader title = 'Vessel Test' firstPage navigation={this.props.navigation} rightIconFunction={this.goToStateList}/>
+        <TopHeader title = 'Vessel Info' firstPage navigation={this.props.navigation} rightIconFunction={this.goToStateList}/>
 
         <ScrollView>
         <View style={styles.pictureContainer}>
@@ -116,7 +116,7 @@ class VesselInfo extends Component {
 
         <View style={styles.infoContainer}>
           {!!vessel.vesselType &&
-          <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Vessel Type:  </Text>{"Testmiljö"}</Text>
+            <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Vessel Type:  </Text>{vessel.vesselType.replace(/_/g, ' ')}</Text>
           }
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>IMO:  </Text>{vessel.imo.replace('urn:mrn:stm:vessel:IMO:', '')}</Text>
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>MMSI:  </Text>{vessel.mmsi.replace('urn:mrn:stm:vessel:MMSI:', '')}</Text>
@@ -137,6 +137,9 @@ class VesselInfo extends Component {
           {(!!extraInfo && !!extraInfo.tonnage) &&
             <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Tonnage: </Text>{extraInfo.tonnage}kg</Text>
           }
+          {(!!extraInfo && !!extraInfo.steelcable) &&
+            <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Steel Cable: </Text>{extraInfo.steelcable}</Text>
+          }
 
           {(!!extraInfo && !!extraInfo.phoneNumber) &&
             <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Phone number: </Text>{extraInfo.phoneNumber}</Text>
@@ -153,7 +156,7 @@ class VesselInfo extends Component {
 
           <TextInput style={styles.EditorContainer}
           ref= "textField"
-          placeholder="Skriv din kommentar här :)"
+          placeholder="...Skepparens telefonnummer, agent osv."
           onChangeText={(text) => this.setState({newComment: text})}
           value={this.state.newComment}
           // text={comment}
@@ -173,27 +176,12 @@ class VesselInfo extends Component {
                 color="#2196f3"
                 accessibilityLabel="Posta din kommentar"
               />
-              <Button
-                      style={styles.formButton}
-                      onPress={this.saveKey.bind(temp)}
-                      title="Spara din kommentar"
-                      color="#2196f3"
-                      accessibilityLabel="Spara din kommentar"
 
-                    />
-
-              <Button
-                style={styles.formButton}
-                onPress={this.resetKey.bind(this)}
-                title="Ta bort kommentar"
-                color="#f44336"
-                accessibilityLabel="Ta bort kommentar"
-              />
-<Text style={styles.infoText}>{"Tidigare kommentarer"}</Text>
+<Text style={styles.hcomment}>{"Tidigare kommentarer"}</Text>
         <View style={styles.EditorContainer}>
 
         { comment.map(function(name, index){
-            return <Text key={ index } style={styles.comment}>{name}</Text>;
+            return <Text key={ index } style={styles.comment}>- {name}</Text>;
         }) }
 
         </View>
@@ -284,6 +272,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colorScheme.backgroundColor,
+  },
+  hcomment: {
+    fontSize: 14,
+    color: colorScheme.quaternaryTextColor,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    marginTop: 10,
   },
   pictureContainer: {
     backgroundColor: colorScheme.backgroundColor,
