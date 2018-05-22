@@ -20,7 +20,7 @@ import colorScheme from '../../config/colors';
 
 import {
     fetchVesselFromIMO,
-    changecomment
+    changeComment
 } from '../../actions';
 
 import ships from '../../assets/ships';
@@ -46,6 +46,13 @@ class VesselInfo extends Component {
         });
     }
 
+    async postNewComment() {
+      console.log("Posting new comment: " + this.state.newComment)
+      this.saveKey(this.state.newComment)
+      this.setState({newComment: ""});
+    }
+
+
     async getKey() {
        try {
          const text = this.props.comment;
@@ -55,11 +62,14 @@ class VesselInfo extends Component {
        }
      }
 
+
+
      async saveKey(text) {
+       console.log("Adding text" + text)
     //  ()try {
          //await this.setState(comment, text);
     //    this.props.changecomment(text)
-this.props.changecomment(text)
+      this.props.changeComment(text)
         /*  await this.props.changecomment(this.props.comment, text);
        } catch (error) {
          console.log("Error saving data " + error);
@@ -142,26 +152,31 @@ this.props.changecomment(text)
         <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
 
           <TextInput style={styles.EditorContainer}
+          ref= "textField"
           placeholder="Skriv din kommentar här :)"
+          onChangeText={(text) => this.setState({newComment: text})}
+          value={this.state.newComment}
           // text={comment}
-          onChangeText={(text) => this.saveKey(text)}
+          //onChangeText={(text) => this.setState({newComment: text})}
+          //onChangeText={(text) => this.saveKey(text)}
           // onChangeText={(temp)}
+
+
 
           />
 
         </View>
         <Button
                 style={styles.formButton}
-                onPress={this.getKey.bind(this)}
+                onPress={this.postNewComment.bind(this)}
                 title="Posta din kommentar"
                 color="#2196f3"
                 accessibilityLabel="Posta din kommentar"
               />
               <Button
                       style={styles.formButton}
-                  onPress={this.saveKey.bind(temp)}
-
-                      title="spara din kommentar"
+                      onPress={this.saveKey.bind(temp)}
+                      title="Spara din kommentar"
                       color="#2196f3"
                       accessibilityLabel="Spara din kommentar"
 
@@ -176,8 +191,10 @@ this.props.changecomment(text)
               />
 <Text style={styles.infoText}>{"Tidigare kommentarer"}</Text>
         <View style={styles.EditorContainer}>
-        <Text> {comment}
-        </Text>
+
+        { comment.map(function(name, index){
+            return <Text key={ index } style={styles.comment}>{name}</Text>;
+        }) }
 
         </View>
 
@@ -275,6 +292,9 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
   },
+  comment: {
+    marginTop: 10,
+  },
   headerContainer: {
     backgroundColor: colorScheme.primaryContainerColor,
     paddingTop: 10,
@@ -335,5 +355,5 @@ function mapStateToProps(state) {
 
 export default connect(mapStateToProps, {
     fetchVesselFromIMO,
-    changecomment,
+    changeComment,
 })(VesselInfo);

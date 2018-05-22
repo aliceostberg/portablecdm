@@ -23,7 +23,7 @@ export const changeUser = (username, password, remember) => {
     }
 };
 
-export const changecomment= (comment) => {
+export const changeComment= (comment) => {
     return {
         type: types.SETTINGS_CHANGE_COMMENT,
         payload: comment
