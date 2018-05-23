@@ -66,9 +66,14 @@ class VesselInfo extends Component {
 
      async saveKey(text) {
        console.log("Adding text" + text)
-
+    //  ()try {
+         //await this.setState(comment, text);
+    //    this.props.changecomment(text)
       this.props.changeComment(text)
-
+        /*  await this.props.changecomment(this.props.comment, text);
+       } catch (error) {
+         console.log("Error saving data " + error);
+       }*/
      }
 
      async resetKey() {
@@ -148,10 +153,13 @@ class VesselInfo extends Component {
 
           <TextInput style={styles.EditorContainer}
           ref= "textField"
-          placeholder="Skriv din kommentar här"
+          placeholder="Skriv din kommentar här :)"
           onChangeText={(text) => this.setState({newComment: text})}
           value={this.state.newComment}
-
+          // text={comment}
+          //onChangeText={(text) => this.setState({newComment: text})}
+          //onChangeText={(text) => this.saveKey(text)}
+          // onChangeText={(temp)}
 
 
 
@@ -165,13 +173,29 @@ class VesselInfo extends Component {
                 color="#2196f3"
                 accessibilityLabel="Posta din kommentar"
               />
+              <Button
+                      style={styles.formButton}
+                      onPress={this.saveKey.bind(temp)}
+                      title="Spara din kommentar"
+                      color="#2196f3"
+                      accessibilityLabel="Spara din kommentar"
 
+                    />
 
+              <Button
+                style={styles.formButton}
+                onPress={this.resetKey.bind(this)}
+                title="Ta bort kommentar"
+                color="#f44336"
+                accessibilityLabel="Ta bort kommentar"
+              />
+<Text style={styles.infoText}>{"Tidigare kommentarer"}</Text>
         <View style={styles.EditorContainer}>
-        <Text style={styles.infoText}>{"Tidigare kommentarer"}</Text>
+
         { comment.map(function(name, index){
-            return <Text key={ index } style={styles.comment}> - {name}</Text>;
+            return <Text key={ index } style={styles.comment}>{name}</Text>;
         }) }
+
         </View>
 
         </ScrollView>
@@ -180,6 +204,82 @@ class VesselInfo extends Component {
   }// slut på render
 }
 
+/*class TodoApp extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { items: [], text: '' };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  render() {
+    return React.createElement(
+      "div",
+      null,
+      React.createElement(
+        "h3",
+        null,
+        "TODO"
+      ),
+      React.createElement(TodoList, { items: this.state.items }),
+      React.createElement(
+        "form",
+        { onSubmit: this.handleSubmit },
+        React.createElement(
+          "label",
+          { htmlFor: "new-todo" },
+          "What needs to be done?"
+        ),
+        React.createElement("input", {
+          id: "new-todo",
+          onChange: this.handleChange,
+          value: this.state.text
+        }),
+        React.createElement(
+          "button",
+          null,
+          "Add #",
+          this.state.items.length + 1
+        )
+      )
+    );
+  }
+
+  handleChange(e) {
+    this.setState({ text: e.target.value });
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    if (!this.state.text.length) {
+      return;
+    }
+    const newItem = {
+      text: this.state.text,
+      id: Date.now()
+    };
+    this.setState(prevState => ({
+      items: prevState.items.concat(newItem),
+      text: ''
+    }));
+  }
+}
+
+class TodoList extends React.Component {
+  render() {
+    return React.createElement(
+      "ul",
+      null,
+      this.props.items.map(item => React.createElement(
+        "li",
+        { key: item.id },
+        item.text
+      ))
+    );
+  }
+}
+render(React.createElement(TodoApp, null), mountNode);
+*/
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -233,6 +333,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     borderRadius: 5,
 
+//{height: 40, borderColor: 'gray', borderWidth: 1}
 
 
 },
