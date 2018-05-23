@@ -175,23 +175,6 @@ class SideMenu extends Component {
                                 navigate('TimeLine');
                         }}
                     />
-                    <ListItem
-                        containerStyle={activeItemKey === 'VesselInfo' ? [containerStyle, styles.selectedContainer] : containerStyle}
-                        leftIcon={{
-                          name:'directions-boat',
-                          color: 'white'}}
-                        hideChevron
-                        underlayColor={colorScheme.secondaryColor}
-                        title={
-                            <View style={styles.textContainer}>
-                                <Text style={textStyle}>Vessel Info</Text>
-                            </View>
-                        }
-                        onPress={() => {
-                            if (haveSelectedPortCall && activeItemKey !== 'VesselInfo')
-                                navigate('VesselInfo');
-                        }}
-                    />
 
                     <ListItem
                         containerStyle={activeItemKey === 'VesselTest' ? [containerStyle, styles.selectedContainer] : containerStyle}
@@ -202,7 +185,7 @@ class SideMenu extends Component {
                         underlayColor={colorScheme.secondaryColor}
                         title={
                             <View style={styles.textContainer}>
-                                <Text style={textStyle}>Vessel Test</Text>
+                                <Text style={textStyle}>Vessel Info</Text>
                             </View>
                         }
                         onPress={() => {

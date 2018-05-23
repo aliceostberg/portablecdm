@@ -9,7 +9,6 @@ import TimeLineView         from '../components/timeline-view';
 import PortCallList         from '../components/portcall-list-view';
 import FilterMenu           from '../components/portcall-list-view/sections/filterMenu';
 import StateDetails         from '../components/timeline-view/sections/statedetails';
-import VesselInfo           from '../components/vessel-info-view';
 import Settings             from '../components/settings-view';
 import LoginKeyCloakView    from '../components/loginkeycloak-view';
 import SelectFavoriteState  from '../components/select-favorite-state-view';
@@ -67,7 +66,6 @@ const MainNavigator = DrawerNavigator({
     TimeLine: {screen: TimeLineNavigator},
     FavoriteStatesSideMenu: { screen: StateList },
     FavoriteStatesInit: { screen: InitiatePortCallNavigator },
-    VesselInfo: { screen: VesselInfo },
     Settings: { screen: SettingsNavigator },
     About: { screen: AboutView },
     Error: { screen: ErrorView },
