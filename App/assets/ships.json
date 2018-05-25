@@ -27653,7 +27653,9 @@
     "mmsi": 266209000,
     "imo": 9309227,
     "length": 177,
-    "beam": 26
+    "beam": 26,
+    "tonnage": 66563,
+    "steelcable": "yes",
   },
   {
     "mmsi": 273336280,
@@ -33095,7 +33097,9 @@
     "mmsi": 266431000,
     "imo": 9255270,
     "length": 170,
-    "beam": 24
+    "beam": 24,
+    "tonnage":15980,
+    "steelcable": "no",
   },
   {
     "mmsi": 220616000,

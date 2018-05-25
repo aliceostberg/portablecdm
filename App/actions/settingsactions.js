@@ -1,4 +1,4 @@
-import * as types from './types';   
+import * as types from './types';
 import { APP_VERSION } from '../config/version';
 import pinch from 'react-native-pinch';
 import { createTokenHeaders, createLegacyHeaders, getCert } from '../util/portcdmUtils';
@@ -23,6 +23,13 @@ export const changeUser = (username, password, remember) => {
     }
 };
 
+export const changeComment= (comment) => {
+    return {
+        type: types.SETTINGS_CHANGE_COMMENT,
+        payload: comment
+    }
+};
+
 export const changePortUnlocode = (unlocode) => {
     return {
         type: types.SETTINGS_CHANGE_PORT_UNLOCODE,
@@ -32,7 +39,7 @@ export const changePortUnlocode = (unlocode) => {
 
 export const changeHostSetting = (host) => {
     return (dispatch, getState) => {
-        
+
         // Need to clear all cached port calls since they are unique to ports
         // but only if host changed since last time
         if (getState().settings.connection.host !== host) {
@@ -150,10 +157,10 @@ export const fetchInstance = () => {
                 let err = checkResponse(result);
                 if(!err)
                     return JSON.parse(result.bodyString);
-                
+
                 dispatch({type: types.SET_ERROR, payload: err});
                 throw new Error(types.ERR_DISPATCHED);
-            }).then(instanceInfo => 
+            }).then(instanceInfo =>
                 dispatchInstanceInfo(instanceInfo, connection.host, dispatch)).catch(err => {
                 dispatchInstanceInfo(null, connection.host, dispatch);
                 if (err.message !== types.ERR_DISPATCHED) {
@@ -162,9 +169,9 @@ export const fetchInstance = () => {
                         dispatch(fetchInstance());
                     } else {
                         dispatch({type: types.SET_ERROR, payload: {
-                            title: 'Unable to fetch instance info!', 
-                            description: 
-                              !err.description ? 'Please check your internet connection.' 
+                            title: 'Unable to fetch instance info!',
+                            description:
+                              !err.description ? 'Please check your internet connection.'
                                                 : err.description}});
                     }
                 }

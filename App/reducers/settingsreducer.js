@@ -1,5 +1,6 @@
-import { 
-  SETTINGS_CHANGE_HOST, 
+import {
+  SETTINGS_CHANGE_COMMENT,
+  SETTINGS_CHANGE_HOST,
   SETTINGS_CHANGE_PORT,
   SETTINGS_ADD_VESSEL_LIST,
   SETTINGS_ADD_VESSEL_TO_LIST,
@@ -34,6 +35,7 @@ const INITIAL_STATE = {
     scheme: 'http://',
   },
   hosts: [],
+  comment: [''],
   rememberLogin: false,
   maxHoursTimeDifference: 72,
   displayOnTimeProbabilityTreshold: 50,
@@ -52,7 +54,7 @@ const INITIAL_STATE = {
     refreshToken: '',
     tokenType: 'bearer',
   },
-  appVersion: APP_VERSION,  
+  appVersion: APP_VERSION,
   instance: undefined
 }
 
@@ -64,12 +66,12 @@ const settingsReducer = (state = INITIAL_STATE, action) => {
     case SETTINGS_CHANGE_FETCH_RELIABILITY:
       return { ...state, fetchReliability: action.payload }
     case SETTINGS_CHANGE_USER: {
-      return { 
-          ...state, 
-          connection: { 
-              ...state.connection, 
-              username: action.payload.username, 
-              password: action.payload.password 
+      return {
+          ...state,
+          connection: {
+              ...state.connection,
+              username: action.payload.username,
+              password: action.payload.password
             },
           rememberLogin: action.payload.remember,
         };
@@ -104,14 +106,22 @@ const settingsReducer = (state = INITIAL_STATE, action) => {
       return { ...state, vesselLists: {...state.vesselLists, [action.payload.listName]: vesselRemoved}}
     case SETTINGS_UPDATE_VERSION:
       return { ...state, appVersion: action.payload };
-    case SETTINGS_FETCH_INSTANCE: 
+    case SETTINGS_FETCH_INSTANCE:
       return { ...state, instance: action.payload };
     case SETTINGS_CLEAR:
       return INITIAL_STATE;
     case CACHE_CHANGE_LIMIT:
       return { ...state, cacheLimit: action.payload };
+      case SETTINGS_CHANGE_COMMENT:
+    //  return { ...state, comment: action.payload };
+//      if(state.comment.includes(action.payload)) return state;
+      return { ...state, comment: [action.payload, ...state.comment]};
+
+
+
     default:
       return state;
+
   }
 }
 
