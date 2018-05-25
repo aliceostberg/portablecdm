@@ -6,6 +6,10 @@ import {
   StyleSheet,
   Image,
   Dimensions,
+  TextInput,
+  ScrollView,
+  Button,
+  AsyncStorage
 } from 'react-native';
 
 import {
@@ -15,7 +19,8 @@ import TopHeader from '../top-header-view';
 import colorScheme from '../../config/colors';
 
 import {
-    fetchVesselFromIMO
+    fetchVesselFromIMO,
+    changeComment
 } from '../../actions';
 
 import ships from '../../assets/ships';
@@ -23,9 +28,13 @@ import ships from '../../assets/ships';
 class VesselInfo extends Component {
     constructor(props) {
         super(props);
-
+        this.state = {
+            comment: [props.comment]
+        };
         this.state = {
             extraInfo: undefined,
+
+        myKey: null
         };
     }
 
@@ -37,11 +46,43 @@ class VesselInfo extends Component {
         });
     }
 
+    async postNewComment() {
+      console.log("Posting new comment: " + this.state.newComment)
+      this.saveKey(this.state.newComment)
+      this.setState({newComment: ""});
+    }
 
+
+    async getKey() {
+       try {
+         const text = this.props.comment;
+         this.setState({comment: text});
+       } catch (error) {
+         console.log("Error retrieving data" + error);
+       }
+     }
+
+
+
+     async saveKey(text) {
+       console.log("Adding text" + text);
+       this.props.changeComment(text)
+     }
+
+     async resetKey() {
+       try {
+         await AsyncStorage.removeItem('@MySuperStore:key');
+         const text = await AsyncStorage.getItem('@MySuperStore:key');
+         this.setState({myKey: text});
+       } catch (error) {
+         console.log("Error resetting data" + error);
+       }
+     }
   render(){
     const { extraInfo } = this.state;
     const { navigate, state } = this.props.navigation;
     const { selectedPortCall, activeItemKey } = this.props;
+    const { comment } = this.props;
     const vessel = this.props.extendedVessel ? this.props.extendedVessel : this.props.vessel;
 
     return(
@@ -49,6 +90,7 @@ class VesselInfo extends Component {
       <View style={styles.container}>
         <TopHeader title = 'Vessel Info' firstPage navigation={this.props.navigation} rightIconFunction={this.goToStateList}/>
 
+        <ScrollView>
         <View style={styles.pictureContainer}>
           <Image
             style={{
@@ -66,11 +108,12 @@ class VesselInfo extends Component {
 
         <View style={styles.infoContainer}>
           {!!vessel.vesselType &&
-          <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Vessel Type:  </Text>{vessel.vesselType.replace(/_/g, ' ')}</Text>
+            <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Vessel Type:  </Text>{vessel.vesselType.replace(/_/g, ' ')}</Text>
           }
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>IMO:  </Text>{vessel.imo.replace('urn:mrn:stm:vessel:IMO:', '')}</Text>
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>MMSI:  </Text>{vessel.mmsi.replace('urn:mrn:stm:vessel:MMSI:', '')}</Text>
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Call Sign:  </Text>{vessel.callSign}</Text>
+
           {!!vessel.flag &&
           <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Flag: </Text>{vessel.flag}</Text>
           }
@@ -84,22 +127,65 @@ class VesselInfo extends Component {
             <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Beam: </Text>{extraInfo.beam}m</Text>
           }
           {(!!extraInfo && !!extraInfo.tonnage) &&
-            <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Tonnage: </Text>{extraInfo.tonnage} t</Text>
+            <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Tonnage: </Text>{extraInfo.tonnage}kg</Text>
+          }
+          {(!!extraInfo && !!extraInfo.steelcable) &&
+            <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Steel Cable: </Text>{extraInfo.steelcable}</Text>
           }
 
           {(!!extraInfo && !!extraInfo.phoneNumber) &&
             <Text style={styles.infoText}><Text style={{fontWeight: 'bold'}}>Phone number: </Text>{extraInfo.phoneNumber}</Text>
           }
+
         </View>
+
+
+
+
+
+        <View style={styles.EditorContainer}>
+          <Text style={styles.infoText}>{"Kommentarsfält"}</Text>
+            <TextInput style={styles.EditorContainer}
+            ref= "textField"
+            placeholder="...Skepparens telefonnummer, agent osv."
+            onChangeText={(text) => this.setState({newComment: text})}
+            value={this.state.newComment}
+            />
+        </View>
+        <Button
+                style={styles.formButton}
+                onPress={this.postNewComment.bind(this)}
+                title="Posta din kommentar"
+                color="#2196f3"
+                accessibilityLabel="Posta din kommentar"
+              />
+
+        <Text style={styles.hcomment}>{"Tidigare kommentarer"}</Text>
+        <View style={styles.EditorContainer}>{
+            comment.map(function(name, index){
+            return <Text key={ index } style={styles.comment}>- {name}</Text>;
+          })
+        }
+        </View>
+
+        </ScrollView>
       </View>
     );
-  }
+  }// slut på render
 }
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colorScheme.backgroundColor,
+  },
+  hcomment: {
+    fontSize: 14,
+    color: colorScheme.quaternaryTextColor,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    marginTop: 10,
   },
   pictureContainer: {
     backgroundColor: colorScheme.backgroundColor,
@@ -107,6 +193,9 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     marginLeft: 10,
     marginRight: 10,
+  },
+  comment: {
+    marginTop: 10,
   },
   headerContainer: {
     backgroundColor: colorScheme.primaryContainerColor,
@@ -134,6 +223,22 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     borderRadius: 5,
   },
+    EditorContainer: {
+    backgroundColor: colorScheme.primaryContainerColor,
+    marginTop: 10,
+    marginBottom: 10,
+    marginLeft: 10,
+    marginRight: 10,
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingLeft: 10,
+    flexDirection: 'column',
+    borderRadius: 5,
+
+//{height: 40, borderColor: 'gray', borderWidth: 1}
+
+
+},
   infoText: {
     fontSize: 14,
     color: colorScheme.quaternaryTextColor,
@@ -145,9 +250,12 @@ function mapStateToProps(state) {
         selectedPortCall: state.portCalls.selectedPortCall,
         vessel: state.portCalls.vessel,
         extendedVessel: state.vessel.vessel,
+        comment: state.settings.comment,
+
     }
 }
 
 export default connect(mapStateToProps, {
     fetchVesselFromIMO,
+    changeComment,
 })(VesselInfo);

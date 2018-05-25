@@ -177,7 +177,7 @@ class SideMenu extends Component {
                     />
 
                     <ListItem
-                        containerStyle={activeItemKey === 'VesselTest' ? [containerStyle, styles.selectedContainer] : containerStyle}
+                        containerStyle={activeItemKey === 'VesselInfo' ? [containerStyle, styles.selectedContainer] : containerStyle}
                         leftIcon={{
                           name:'directions-boat',
                           color: 'white'}}
@@ -189,8 +189,8 @@ class SideMenu extends Component {
                             </View>
                         }
                         onPress={() => {
-                            if (haveSelectedPortCall && activeItemKey !== 'VesselTest')
-                                navigate('VesselTest');
+                            if (haveSelectedPortCall && activeItemKey !== 'VesselInfo')
+                                navigate('VesselInfo');
                         }}
                     />
 

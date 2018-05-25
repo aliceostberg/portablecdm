@@ -19,7 +19,7 @@ import ErrorView            from '../components/error-view';
 import BearthList           from '../components/berth-list-view';
 import BerthList            from '../components/berth-list-view';
 import BerthTimeLine        from '../components/berth-timeline-view';
-import VesselTest           from '../components/vessel-info-test';
+import VesselInfo           from '../components/vessel-info-view';
 const BerthViewNavigator = StackNavigator({
     BerthList: { screen: BearthList }, // THIS SHOULD BE FIRST!!
     BerthTimeLine: { screen: BerthTimeLine },
@@ -69,7 +69,7 @@ const MainNavigator = DrawerNavigator({
     Settings: { screen: SettingsNavigator },
     About: { screen: AboutView },
     Error: { screen: ErrorView },
-    VesselTest: { screen: VesselTest },
+    VesselInfo: {screen: VesselInfo},
 }, {
     headerMode: 'none',
     drawerWidth: 3*Dimensions.get('window').width/4,
