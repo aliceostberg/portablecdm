@@ -1,3 +1,16 @@
+# DAT255-Unicorn
+This is a Software Engineering Project that runs at Chalmers University of Technology. 
+
+# INFO
+Five students managed this project during spring 2018. The team named themself Unicorn and more information about the process, their social contract and weekly reflections can be find in this repo: https://github.com/aliceostberg/DAT255-Unicorn
+
+# CODE
+The code is found in the folders above.
+
+# PRODUCT AND SPRINT BACKLOG
+The product and sprint backlog for this project is found here: https://trello.com/b/0Y6JIQzo
+
+
 # Frontend, multiplatform mobile application
 Contributors: 
 Johan Berndtsson, Pontus Stjernström, Nicole Ascard
