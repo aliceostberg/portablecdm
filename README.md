@@ -8,7 +8,7 @@ Five students managed this project during spring 2018. The team named themself U
 The code is found in the folders above.
 
 # PRODUCT AND SPRINT BACKLOG
-The product and sprint backlog for this project is found here: https://trello.com/b/0Y6JIQzo
+The product and sprint backlog for this project can be found here: https://trello.com/b/0Y6JIQzo
 
 
 # Frontend, multiplatform mobile application
